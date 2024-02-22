@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Cities</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+
+
+    <h1>Compare Cities</h1>
+    <h5>Compare the environmental effects of two different cities </h5>
+    <form action="/compare_cities" method="post">
+        <label for="city_a">City A:</label>
+        <br>
+        <input type="text" id="city_a" class ="cityinput" name="A" ><br><br>
+        <label for="city_b">City B:</label>
+        <br>
+        <input type="text" id="city_b" class="cityinput" name="B"><br><br>
+        <input type="submit" value="Compare" id="compare">
+    </form>
+</div>
+</body>
+<style>
+    *{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+h1{
+    color: #bcb88a;
+}
+
+.cityinput{
+    width: 300px;
+    height: 25px;
+    border-radius: 15px;
+    box-shadow: none;
+    border: solid 1px grey;
+    margin: 10px;
+    color:black;
+}
+
+body{
+    
+
+background-image: url("/static/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+min-height: 100vh;
+background-attachment: fixed;
+}
+
+#compare{
+    border:none;
+    height: 30px;
+    width:80px;
+    border-radius: 15px;
+    background-color:white;
+    font-weight: bold;
+    color:#013220;
+}
+
+#main{
+    position: fixed;
+    top: 10%;
+    right:30%;
+    background-color:rgb(0 0 0/70%);
+    padding:40px;
+    border-radius: 20px;
+
+}
+</style>
+</html>
